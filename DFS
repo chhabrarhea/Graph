@@ -24,7 +24,7 @@ public boolean dfs(String s,String d)
 		{
 			if(!pr.containsKey(key))
 			{
-      pair p=new pair;
+      pair p=new pair();
 			 p.vname=key;
 			 p.psf=np.psf+key;
 			 st.addFirst(p);
