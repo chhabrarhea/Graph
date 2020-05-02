@@ -1,10 +1,4 @@
-/**
- * @author Rhea Chhabra (https://github.com/chhabrarhea)
- */
-
-
-import java.util.*;
-public class graph {
+ public class graph {
 	
 //Using a HashMap gr with all vertices as keys and address of class object vertext as value
 	
