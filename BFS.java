@@ -1,18 +1,18 @@
-private class pair{
+private class Pair{
 	String vname;
 	String psf; //path so far:nodes traversed so far
 }
 public boolean bfs(String s,String d)
 {
-	HashMap<String,Boolean> pr=new HashMap<>();
+	HashMap<String,Boolean> pr=new HashMap<>(); //processed nodes
 	LinkedList<pair> q=new LinkedList<>();
-	pair np=new pair();
+	Pair np=new Pair();
 	np.vname=s;
 	np.psf=s;
 	q.addLast(np);
 	while(!q.isEmpty())
 	{
-		pair rp=q.removeFirst();
+		Pair rp=q.removeFirst();
 		if(pr.containsKey(rp.vname))
 			continue;
 		pr.put(rp.vname, true);
@@ -24,7 +24,7 @@ public boolean bfs(String s,String d)
 		{
 			if(!pr.containsKey(key))
 			{
-                         pair p=new pair();
+                         Pair p=new Pair();
 			 p.vname=key;
 			 p.psf=np.psf+key;
 			 q.addLast(p);
